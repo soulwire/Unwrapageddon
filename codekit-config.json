@@ -2,10 +2,486 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "7839",
   "files" : {
-
+    "\/src\/coffee\/scene.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/scene.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/scene.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/coffee\/pattern.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/pattern.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/pattern.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/coffee\/main.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/build\/js\/main.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
+    "\/src\/js\/postprocessing\/ShaderPass.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/postprocessing\/ShaderPass.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/postprocessing\/ShaderPass-ck.js",
+      "fileType" : 64
+    },
+    "\/build\/img\/skybox\/nz.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/skybox\/nz.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/skybox\/nz.jpg",
+      "initialSize" : 54574,
+      "fileType" : 4096
+    },
+    "\/build\/js\/main.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/js\/main.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/build\/js\/main-ck.js",
+      "fileType" : 64
+    },
+    "\/build\/img\/skybox\/pz.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/skybox\/pz.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/skybox\/pz.jpg",
+      "initialSize" : 58868,
+      "fileType" : 4096
+    },
+    "\/src\/js\/postprocessing\/RenderPass.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/postprocessing\/RenderPass.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/postprocessing\/RenderPass-ck.js",
+      "fileType" : 64
+    },
+    "\/src\/coffee\/bump.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/bump.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/bump.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/coffee\/paper.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/paper.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/paper.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/coffee\/themes.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/themes.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/themes.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/js\/postprocessing\/EffectComposer.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/postprocessing\/EffectComposer.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/postprocessing\/EffectComposer-ck.js",
+      "fileType" : 64
+    },
+    "\/src\/js\/postprocessing\/MaskPass.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/postprocessing\/MaskPass.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/postprocessing\/MaskPass-ck.js",
+      "fileType" : 64
+    },
+    "\/src\/coffee\/shapes.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/shapes.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/shapes.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/js\/shaders\/VignetteShader.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/shaders\/VignetteShader.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/shaders\/VignetteShader-ck.js",
+      "fileType" : 64
+    },
+    "\/build\/img\/skybox\/px.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/skybox\/px.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/skybox\/px.jpg",
+      "initialSize" : 60050,
+      "fileType" : 4096
+    },
+    "\/src\/js\/shaders\/FilmShader.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/shaders\/FilmShader.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/shaders\/FilmShader-ck.js",
+      "fileType" : 64
+    },
+    "\/lib\/js\/three.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/js\/three.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/lib\/js\/three-ck.js",
+      "fileType" : 64
+    },
+    "\/build\/img\/sprites.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/sprites.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/sprites.png",
+      "initialSize" : 80070,
+      "fileType" : 8192
+    },
+    "\/build\/img\/skybox\/nx.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/skybox\/nx.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/skybox\/nx.jpg",
+      "initialSize" : 55756,
+      "fileType" : 4096
+    },
+    "\/src\/js\/postprocessing\/FilmPass.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/js\/postprocessing\/FilmPass.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/src\/js\/postprocessing\/FilmPass-ck.js",
+      "fileType" : 64
+    },
+    "\/src\/coffee\/sprites.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/sprites.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/sprites.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/coffee\/core.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/core.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/core.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/build\/css\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/build\/js\/postprocessing.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/js\/postprocessing.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/build\/js\/postprocessing-ck.js",
+      "fileType" : 64
+    },
+    "\/src\/coffee\/physics.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/physics.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/physics.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/src\/js\/shaders\/CopyShader.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/build\/js\/postprocessing.js",
+      "fileType" : 64
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/build\/img\/skybox\/ny.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/skybox\/ny.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/skybox\/ny.jpg",
+      "initialSize" : 52198,
+      "fileType" : 4096
+    },
+    "\/build\/img\/bump.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/bump.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/bump.png",
+      "initialSize" : 13475,
+      "fileType" : 8192
+    },
+    "\/build\/img\/skybox\/py.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/skybox\/py.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/skybox\/py.jpg",
+      "initialSize" : 19634,
+      "fileType" : 4096
+    },
+    "\/src\/coffee\/utils.coffee" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/coffee\/utils.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/src\/coffee\/utils.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    }
   },
   "manualImportLinks" : [
-
+    {
+      "type" : 0,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/postprocessing\/EffectComposer.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/postprocessing\/FilmPass.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/postprocessing\/MaskPass.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/shaders\/VignetteShader.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/postprocessing\/RenderPass.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/postprocessing\/ShaderPass.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/src\/js\/shaders\/FilmShader.js",
+      "baseFileAbbreviatedPath" : "\/src\/js\/shaders\/CopyShader.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/core.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/utils.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/sprites.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/shapes.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/themes.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/pattern.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/bump.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 7,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/physics.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 8,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/paper.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 0,
+      "position" : 9,
+      "linkedFileAbbreviatedPath" : "\/src\/coffee\/scene.coffee",
+      "baseFileAbbreviatedPath" : "\/src\/coffee\/main.coffee",
+      "followForSyntaxChecking" : 1
+    }
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
