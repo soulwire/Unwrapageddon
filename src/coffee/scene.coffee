@@ -43,7 +43,7 @@ class Scene
 
         @ambient = new THREE.AmbientLight 0xffffff
 
-        @spot = new THREE.SpotLight 0xffffff, 2.0, 0, PI*0.8, 60
+        @spot = new THREE.SpotLight 0xffffff, 2.0, 0, PI*0.5, 50
         @spot.position.set 500, 3000, 2500
         @spot.lookAt new THREE.Vector3()
 

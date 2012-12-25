@@ -24,8 +24,8 @@ init = ->
 
     # Setup renderer
     renderer.shadowMapEnabled = yes
-    renderer.shadowMapSoft = yes
     renderer.shadowMapCascade = yes
+    renderer.shadowMapSoft = yes
     renderer.setClearColor 0x111111
     renderer.autoClear = no
 
@@ -40,12 +40,12 @@ init = ->
     effectCopy = new THREE.ShaderPass THREE.CopyShader
     effectCopy.renderToScreen = yes
 
-    effectVignette.uniforms[ "offset" ].value = 0.05
-    effectVignette.uniforms[ "darkness" ].value = 0.7
+    effectVignette.uniforms[ "darkness" ].value = 0.6
+    effectVignette.uniforms[ "offset" ].value = 0.1
 
     composer = new THREE.EffectComposer renderer
     composer.addPass renderModel
-    composer.addPass effectVignette
+    #composer.addPass effectVignette
     composer.addPass effectFilm
     composer.addPass effectCopy
 
