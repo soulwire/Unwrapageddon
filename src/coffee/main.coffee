@@ -34,18 +34,12 @@ init = ->
 
     # Setup post processing
     renderModel = new THREE.RenderPass scene.scene, camera
-    
-    effectVignette = new THREE.ShaderPass THREE.VignetteShader
     effectFilm = new THREE.FilmPass 0.12, 0.0, 0, no
     effectCopy = new THREE.ShaderPass THREE.CopyShader
     effectCopy.renderToScreen = yes
 
-    effectVignette.uniforms[ "darkness" ].value = 0.6
-    effectVignette.uniforms[ "offset" ].value = 0.1
-
     composer = new THREE.EffectComposer renderer
     composer.addPass renderModel
-    #composer.addPass effectVignette
     composer.addPass effectFilm
     composer.addPass effectCopy
 
@@ -76,7 +70,7 @@ update = ->
     clock = now
 
     scene.update dtSq
-    #renderer.render scene.scene, camera
+    
     do renderer.clear
     composer.render dt/1000
     requestAnimationFrame update
@@ -91,18 +85,17 @@ mousedown = ( e ) ->
 
     renderer.domElement.className = 'grabbing'
     drag = do scene.mouse.clone
-    do @scene.startDrag
+    do scene.startDrag
 
 mouseup = ( e ) ->
 
     renderer.domElement.className = ''
-    do @scene.stopDrag
+    do scene.stopDrag
 
 mousemove = ( e ) ->
 
     scene.mouse.x = 1.5 * (( width * -0.5 ) + e.pageX);
     scene.mouse.y = 1.5 * (( height * 0.5 ) - e.pageY);
-    #scene.mouse.z = scene.mouse.x
 
     if scene.dragging
         
