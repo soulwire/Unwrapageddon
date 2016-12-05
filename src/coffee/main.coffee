@@ -1,6 +1,7 @@
 
 width = window.innerWidth
 height = window.innerHeight
+scale = window.devicePixelRatio || 1
 aspect = width / height
 distance = 1200
 renderer = new THREE.WebGLRenderer antialias: yes
@@ -47,11 +48,16 @@ init = ->
     camera.position.z = distance
 
     # Setup domElement
+    renderer.domElement.style.width = '100%'
+    renderer.domElement.style.height = '100%'
     document.body.appendChild renderer.domElement
 
     # Bind event handlers
+    window.addEventListener 'touchstart', mousedown
     window.addEventListener 'mousedown', mousedown
+    window.addEventListener 'touchmove', mousemove
     window.addEventListener 'mousemove', mousemove
+    window.addEventListener 'touchend', mouseup
     window.addEventListener 'mouseup', mouseup
     window.addEventListener 'resize', resize
 
@@ -82,20 +88,25 @@ update = ->
 # --------------------------------------------------
 
 mousedown = ( e ) ->
-
+    
     renderer.domElement.className = 'grabbing'
     drag = do scene.mouse.clone
+    mousemove e
+    do e.preventDefault
     do scene.startDrag
 
 mouseup = ( e ) ->
 
     renderer.domElement.className = ''
+    do e.preventDefault
     do scene.stopDrag
 
 mousemove = ( e ) ->
+    do e.preventDefault
+    pos = if e.touches then e.touches[0] else e
 
-    scene.mouse.x = 1.5 * (( width * -0.5 ) + e.pageX);
-    scene.mouse.y = 1.5 * (( height * 0.5 ) - e.pageY);
+    scene.mouse.x = 1.5 * (( width * -0.5 ) + (pos.clientX || 0))
+    scene.mouse.y = 1.5 * (( height * 0.5 ) - (pos.clientY || 0))
 
     if scene.dragging
         
@@ -108,7 +119,7 @@ resize = ->
     width = window.innerWidth
     height = window.innerHeight
 
-    renderer.setSize width, height
+    renderer.setSize width * scale, height * scale
     camera.aspect = width / height
 
     do camera.updateProjectionMatrix

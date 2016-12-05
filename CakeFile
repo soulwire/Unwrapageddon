@@ -15,7 +15,7 @@ output = 'build/js/main.js'
 other  = 'build/js/deps.js'
 
 # Options passed to CoffeeScript the compiler (e.g. --bare)
-opts   = '--lint'
+opts   = ''
 
 # Files (in order) to concatenate
 files  = [

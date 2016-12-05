@@ -85,6 +85,7 @@ class Scene
         return if not @current
 
         @dragging = yes
+        @anchor.copy @mouse
 
         # Make some random springs
         vertices = do @current.geometry.vertices.concat
