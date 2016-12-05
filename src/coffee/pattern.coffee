@@ -229,8 +229,9 @@ Pattern = do ->
 
     draw: ( label = no ) ->
 
-        ctx.canvas.width = width
-        ctx.canvas.height = height
+        ctx.canvas.width = width * scale
+        ctx.canvas.height = height * scale
+        ctx.scale scale, scale
 
         # Select a random theme
         theme = if @generation is 0 then themes[0] else random themes
