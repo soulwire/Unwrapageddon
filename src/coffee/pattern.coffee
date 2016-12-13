@@ -246,14 +246,15 @@ Pattern = do ->
             do @patterns.star
 
             message = 'UNWRAP ME!'
+            s = if width > 700 then 7 else 4
 
             ctx.restore()
             ctx.translate width * 0.5, height * 0.5
-            ctx.scale 8, 8
+            ctx.scale s, s
             ctx.rotate (if chance 0.5 then 1 else -1) * (random 0.2, 0.3)
             ctx.globalAlpha = 0.9
             
-            ctx.font = '20px; Arial+Bold'
+            ctx.font = '40px; Arial+Bold'
             ctx.textBaseline = 'middle'
             ctx.textAlign = 'center'
             
